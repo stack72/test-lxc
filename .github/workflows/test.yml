@@ -1,0 +1,13 @@
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+    - name: Run script
+      run: setup.sh
+name: main
+on:
+  push:
+    branches:
+    - main
