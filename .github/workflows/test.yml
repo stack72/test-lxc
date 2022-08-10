@@ -5,7 +5,7 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v2
     - name: Run script
-      run: setup.sh
+      run: ./setup.sh
 name: main
 on:
   push:
